@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using CSharpTests.Performance;
 using CSharpTests.Results;
 
 namespace CSharpTests
@@ -19,6 +20,16 @@ namespace CSharpTests
         private void convertDateToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ConvertDate frm = new ConvertDate
+            {
+                MdiParent = this,
+                Parent = pnlMain
+            };
+            frm.Show();
+        }
+
+        private void loopsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Loops frm = new Loops
             {
                 MdiParent = this,
                 Parent = pnlMain

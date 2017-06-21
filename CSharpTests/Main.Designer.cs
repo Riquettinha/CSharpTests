@@ -34,6 +34,7 @@
             this.convertDateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.performanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.loopsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,6 +69,8 @@
             // 
             // performanceToolStripMenuItem
             // 
+            this.performanceToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.loopsToolStripMenuItem});
             this.performanceToolStripMenuItem.Name = "performanceToolStripMenuItem";
             this.performanceToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
             this.performanceToolStripMenuItem.Text = "Performance";
@@ -82,6 +85,13 @@
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(633, 307);
             this.pnlMain.TabIndex = 2;
+            // 
+            // loopsToolStripMenuItem
+            // 
+            this.loopsToolStripMenuItem.Name = "loopsToolStripMenuItem";
+            this.loopsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.loopsToolStripMenuItem.Text = "Loops";
+            this.loopsToolStripMenuItem.Click += new System.EventHandler(this.loopsToolStripMenuItem_Click);
             // 
             // Main
             // 
@@ -115,5 +125,6 @@
         private System.Windows.Forms.ToolStripMenuItem convertDateToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem performanceToolStripMenuItem;
         private System.Windows.Forms.Panel pnlMain;
+        private System.Windows.Forms.ToolStripMenuItem loopsToolStripMenuItem;
     }
 }

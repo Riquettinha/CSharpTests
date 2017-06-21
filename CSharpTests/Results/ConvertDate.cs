@@ -60,7 +60,8 @@ namespace CSharpTests.Results
         private void ConvertDate_Paint(object sender, PaintEventArgs e)
         {
             e.Graphics.DrawRectangle(new Pen(Color.Black, 1),
-                                     DisplayRectangle.X, DisplayRectangle.Y, DisplayRectangle.Width-1, DisplayRectangle.Height-1);
+                DisplayRectangle.X, DisplayRectangle.Y,
+                DisplayRectangle.Width-1, DisplayRectangle.Height-1);
         }
     }
 }
