@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Drawing;
 using System.Windows.Forms;
+using CSharpTests.Results;
 
 namespace CSharpTests
 {
@@ -23,7 +23,6 @@ namespace CSharpTests
                 MdiParent = this,
                 Parent = pnlMain
             };
-            frm.StartPosition = FormStartPosition.CenterParent;
             frm.Show();
         }
     }

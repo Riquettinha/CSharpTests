@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Globalization;
 using System.Windows.Forms;
 
-namespace CSharpTests
+namespace CSharpTests.Results
 {
     public partial class ConvertDate : Form
     {
