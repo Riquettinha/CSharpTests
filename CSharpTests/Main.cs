@@ -36,5 +36,26 @@ namespace CSharpTests
             };
             frm.Show();
         }
+
+        private void enumerableToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Enumerables frm = new Enumerables
+            {
+                MdiParent = this,
+                Parent = pnlMain
+            };
+            frm.Show();
+        }
+
+        private void visualToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frm = new Visual();
+            frm.Show();
+        }
+
+        private void resultsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

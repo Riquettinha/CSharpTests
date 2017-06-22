@@ -40,6 +40,8 @@
             this.lbMedium = new System.Windows.Forms.Label();
             this.tbLambdaResult = new System.Windows.Forms.TextBox();
             this.lbLambdaResult = new System.Windows.Forms.Label();
+            this.tbFromResult = new System.Windows.Forms.TextBox();
+            this.lbExceptResult = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbWhileResult
@@ -133,12 +135,30 @@
             this.lbLambdaResult.TabIndex = 9;
             this.lbLambdaResult.Text = "Lambda:";
             // 
+            // tbFromResult
+            // 
+            this.tbFromResult.Location = new System.Drawing.Point(90, 151);
+            this.tbFromResult.Name = "tbFromResult";
+            this.tbFromResult.Size = new System.Drawing.Size(115, 22);
+            this.tbFromResult.TabIndex = 12;
+            // 
+            // lbExceptResult
+            // 
+            this.lbExceptResult.AutoSize = true;
+            this.lbExceptResult.Location = new System.Drawing.Point(11, 154);
+            this.lbExceptResult.Name = "lbExceptResult";
+            this.lbExceptResult.Size = new System.Drawing.Size(37, 14);
+            this.lbExceptResult.TabIndex = 11;
+            this.lbExceptResult.Text = "From:";
+            // 
             // Loops
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(218, 313);
+            this.ClientSize = new System.Drawing.Size(218, 183);
+            this.Controls.Add(this.tbFromResult);
+            this.Controls.Add(this.lbExceptResult);
             this.Controls.Add(this.tbLambdaResult);
             this.Controls.Add(this.lbLambdaResult);
             this.Controls.Add(this.lbMedium);
@@ -176,5 +196,7 @@
         private System.Windows.Forms.Label lbMedium;
         private System.Windows.Forms.TextBox tbLambdaResult;
         private System.Windows.Forms.Label lbLambdaResult;
+        private System.Windows.Forms.TextBox tbFromResult;
+        private System.Windows.Forms.Label lbExceptResult;
     }
 }

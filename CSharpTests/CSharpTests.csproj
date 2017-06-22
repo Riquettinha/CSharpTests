@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Performance\Enumerables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Performance\Enumerables.Designer.cs">
+      <DependentUpon>Enumerables.cs</DependentUpon>
+    </Compile>
     <Compile Include="Performance\Loops.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,15 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Visual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visual.Designer.cs">
+      <DependentUpon>Visual.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Performance\Enumerables.resx">
+      <DependentUpon>Enumerables.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Performance\Loops.resx">
       <DependentUpon>Loops.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +108,9 @@
     </Compile>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visual.resx">
+      <DependentUpon>Visual.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

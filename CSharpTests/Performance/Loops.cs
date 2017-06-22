@@ -34,28 +34,29 @@ namespace CSharpTests.Performance
             tbForResult.Text = TestFor() + @" ticks";
             tbForeachResult.Text = TestForeach() + @" ticks";
             tbLambdaResult.Text = TestLambda() + @" ticks";
+            tbFromResult.Text = TestFrom() + @" ticks";
         }
 
-     private void FillLists()
-     {
-         var rnd = new Random();
-         for (int i = 0; i < 100000; i++)
-         {
-             _complexList1.Add(new ComplexObject
-             {
-                 Number = rnd.Next(5000),
-                 Character = (char)rnd.Next(50)
-             });
-         }
-         for (int i = 0; i < 1000; i++)
-         {
-             _complexList2.Add(new ComplexObject
-             {
-                 Number = rnd.Next(5000),
-                 Character = (char)rnd.Next(50)
-             });
-         }
-     }
+        private void FillLists()
+        {
+            var rnd = new Random();
+            for (int i = 0; i < 100000; i++)
+            {
+                _complexList1.Add(new ComplexObject
+                {
+                    Number = rnd.Next(5000),
+                    Character = (char) rnd.Next(50)
+                });
+            }
+            for (int i = 0; i < 1000; i++)
+            {
+                _complexList2.Add(new ComplexObject
+                {
+                    Number = rnd.Next(5000),
+                    Character = (char) rnd.Next(50)
+                });
+            }
+        }
 
         public void ExecuteWhile()
         {
@@ -76,7 +77,7 @@ namespace CSharpTests.Performance
                     countList1++;
                 }
 
-                if(!found)
+                if (!found)
                     result.Add(_complexList2[countList2]);
 
                 countList2++;
@@ -179,12 +180,12 @@ namespace CSharpTests.Performance
             return foreachSum / _executeTimes;
         }
 
-    public void ExecuteLambda()
-    {
-        var result =
-            _complexList2.Count(
-                l2 => _complexList1.All(l1 => l2.Number != l1.Number || l2.Character != l1.Character));
-    }
+        public void ExecuteLambda()
+        {
+            var result =
+                _complexList2.Where(
+                    l2 => _complexList1.All(l1 => l2.Number != l1.Number || l2.Character != l1.Character)).ToList();
+        }
 
         public decimal TestLambda()
         {
@@ -202,6 +203,58 @@ namespace CSharpTests.Performance
             }
 
             return LINQSum / _executeTimes;
+        }
+
+        public void ExecuteFrom()
+        {
+            var result = (from list1 in _complexList2
+                join list2 in _complexList1 on new {list1.Number, list1.Character} equals
+                new {list2.Number, list2.Character}
+                into list3
+                where !list3.Any()
+                select list1).ToList();
+        }
+
+        public decimal TestFrom()
+        {
+            long FromSum = 0;
+            for (int i = 0; i < _executeTimes; i++)
+            {
+                GC.Collect();
+                Stopwatch sw = new Stopwatch();
+                sw.Start();
+
+                ExecuteFrom();
+
+                sw.Stop();
+                FromSum += sw.Elapsed.Ticks;
+            }
+
+            return FromSum / _executeTimes;
+        }
+
+        public void ExecuteExcept()
+        {
+            List<ComplexObject> _onlyInList1 = _complexList1.Except(_complexList2).ToList();
+            List<ComplexObject> _onlyInList2 = _complexList2.Except(_complexList1).ToList();
+        }
+
+        public decimal TestExcept()
+        {
+            long exceptSum = 0;
+            for (int i = 0; i < _executeTimes; i++)
+            {
+                GC.Collect();
+                Stopwatch sw = new Stopwatch();
+                sw.Start();
+
+                ExecuteExcept();
+
+                sw.Stop();
+                exceptSum += sw.Elapsed.Ticks;
+            }
+
+            return exceptSum / _executeTimes;
         }
 
         private void Loops_Paint(object sender, PaintEventArgs e)

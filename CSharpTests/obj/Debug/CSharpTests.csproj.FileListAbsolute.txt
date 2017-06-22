@@ -12,6 +12,7 @@ C:\Users\isabella.riquetti\Documents\Projetos Pessoais\CSharpTests\CSharpTests\b
 C:\Users\isabella.riquetti\Documents\Projetos Pessoais\CSharpTests\CSharpTests\bin\Debug\CSharpTests.exe
 C:\Users\isabella.riquetti\Documents\Projetos Pessoais\CSharpTests\CSharpTests\bin\Debug\CSharpTests.pdb
 C:\Users\isabella.riquetti\Documents\Projetos Pessoais\CSharpTests\CSharpTests\obj\Debug\CSharpTests.csprojResolveAssemblyReference.cache
+C:\Users\isabella.riquetti\Documents\Projetos Pessoais\CSharpTests\CSharpTests\obj\Debug\CSharpTests.Performance.Enumerables.resources
 C:\Users\isabella.riquetti\Documents\Projetos Pessoais\CSharpTests\CSharpTests\obj\Debug\CSharpTests.Performance.Loops.resources
 C:\Users\isabella.riquetti\Documents\Projetos Pessoais\CSharpTests\CSharpTests\obj\Debug\CSharpTests.Results.ConvertDate.resources
 C:\Users\isabella.riquetti\Documents\Projetos Pessoais\CSharpTests\CSharpTests\obj\Debug\CSharpTests.Properties.Resources.resources
@@ -19,3 +20,4 @@ C:\Users\isabella.riquetti\Documents\Projetos Pessoais\CSharpTests\CSharpTests\o
 C:\Users\isabella.riquetti\Documents\Projetos Pessoais\CSharpTests\CSharpTests\obj\Debug\CSharpTests.csproj.GenerateResource.Cache
 C:\Users\isabella.riquetti\Documents\Projetos Pessoais\CSharpTests\CSharpTests\obj\Debug\CSharpTests.exe
 C:\Users\isabella.riquetti\Documents\Projetos Pessoais\CSharpTests\CSharpTests\obj\Debug\CSharpTests.pdb
+C:\Users\isabella.riquetti\Documents\Projetos Pessoais\CSharpTests\CSharpTests\obj\Debug\CSharpTests.Visual.resources
