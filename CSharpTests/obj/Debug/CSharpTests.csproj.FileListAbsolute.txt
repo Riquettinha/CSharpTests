@@ -1,10 +1,11 @@
 C:\Users\isabella.riquetti\Documents\visual studio 2017\Projects\CSharpTests\CSharpTests\bin\Debug\CSharpTests.exe.config
 C:\Users\isabella.riquetti\Documents\visual studio 2017\Projects\CSharpTests\CSharpTests\bin\Debug\CSharpTests.exe
 C:\Users\isabella.riquetti\Documents\visual studio 2017\Projects\CSharpTests\CSharpTests\bin\Debug\CSharpTests.pdb
-C:\Users\isabella.riquetti\Documents\visual studio 2017\Projects\CSharpTests\CSharpTests\obj\Debug\CSharpTests.csprojResolveAssemblyReference.cache
 C:\Users\isabella.riquetti\Documents\visual studio 2017\Projects\CSharpTests\CSharpTests\obj\Debug\CSharpTests.ConvertDate.resources
 C:\Users\isabella.riquetti\Documents\visual studio 2017\Projects\CSharpTests\CSharpTests\obj\Debug\CSharpTests.Properties.Resources.resources
 C:\Users\isabella.riquetti\Documents\visual studio 2017\Projects\CSharpTests\CSharpTests\obj\Debug\CSharpTests.Main.resources
 C:\Users\isabella.riquetti\Documents\visual studio 2017\Projects\CSharpTests\CSharpTests\obj\Debug\CSharpTests.csproj.GenerateResource.Cache
 C:\Users\isabella.riquetti\Documents\visual studio 2017\Projects\CSharpTests\CSharpTests\obj\Debug\CSharpTests.exe
 C:\Users\isabella.riquetti\Documents\visual studio 2017\Projects\CSharpTests\CSharpTests\obj\Debug\CSharpTests.pdb
+C:\Users\isabella.riquetti\Documents\Visual Studio 2017\Projects\CSharpTests\CSharpTests\obj\Debug\CSharpTests.csproj.CoreCompileInputs.cache
+C:\Users\isabella.riquetti\Documents\Visual Studio 2017\Projects\CSharpTests\CSharpTests\obj\Debug\CSharpTests.ConvertToDecimal.resources

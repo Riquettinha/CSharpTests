@@ -61,6 +61,13 @@
     <Compile Include="ConvertDate.Designer.cs">
       <DependentUpon>ConvertDate.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConvertToDecimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConvertToDecimal.Designer.cs">
+      <DependentUpon>ConvertToDecimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtensionMethods.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Main.cs">
@@ -71,6 +78,9 @@
     </Compile>
     <EmbeddedResource Include="ConvertDate.resx">
       <DependentUpon>ConvertDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConvertToDecimal.resx">
+      <DependentUpon>ConvertToDecimal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

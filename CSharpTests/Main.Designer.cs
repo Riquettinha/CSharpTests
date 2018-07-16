@@ -34,6 +34,7 @@
             this.convertDateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.performanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.conversãoDecimalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +55,8 @@
             // resultsToolStripMenuItem
             // 
             this.resultsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.convertDateToolStripMenuItem});
+            this.convertDateToolStripMenuItem,
+            this.conversãoDecimalToolStripMenuItem});
             this.resultsToolStripMenuItem.Name = "resultsToolStripMenuItem";
             this.resultsToolStripMenuItem.Size = new System.Drawing.Size(86, 22);
             this.resultsToolStripMenuItem.Text = "Resultados";
@@ -62,7 +64,7 @@
             // convertDateToolStripMenuItem
             // 
             this.convertDateToolStripMenuItem.Name = "convertDateToolStripMenuItem";
-            this.convertDateToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.convertDateToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.convertDateToolStripMenuItem.Text = "Conversão Date";
             this.convertDateToolStripMenuItem.Click += new System.EventHandler(this.convertDateToolStripMenuItem_Click);
             // 
@@ -82,6 +84,13 @@
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(633, 307);
             this.pnlMain.TabIndex = 2;
+            // 
+            // conversãoDecimalToolStripMenuItem
+            // 
+            this.conversãoDecimalToolStripMenuItem.Name = "conversãoDecimalToolStripMenuItem";
+            this.conversãoDecimalToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.conversãoDecimalToolStripMenuItem.Text = "Conversão Decimal";
+            this.conversãoDecimalToolStripMenuItem.Click += new System.EventHandler(this.conversãoDecimalToolStripMenuItem_Click);
             // 
             // Main
             // 
@@ -115,5 +124,6 @@
         private System.Windows.Forms.ToolStripMenuItem convertDateToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem performanceToolStripMenuItem;
         private System.Windows.Forms.Panel pnlMain;
+        private System.Windows.Forms.ToolStripMenuItem conversãoDecimalToolStripMenuItem;
     }
 }

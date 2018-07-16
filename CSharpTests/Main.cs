@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Drawing;
 using System.Windows.Forms;
 
 namespace CSharpTests
@@ -19,6 +18,17 @@ namespace CSharpTests
         private void convertDateToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ConvertDate frm = new ConvertDate
+            {
+                MdiParent = this,
+                Parent = pnlMain
+            };
+            frm.StartPosition = FormStartPosition.CenterParent;
+            frm.Show();
+        }
+
+        private void conversãoDecimalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConvertToDecimal frm = new ConvertToDecimal
             {
                 MdiParent = this,
                 Parent = pnlMain
