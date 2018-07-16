@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
+using CSharpTests.Performance;
+using CSharpTests.Results;
 
 namespace CSharpTests
 {
@@ -22,19 +24,50 @@ namespace CSharpTests
                 MdiParent = this,
                 Parent = pnlMain
             };
-            frm.StartPosition = FormStartPosition.CenterParent;
             frm.Show();
         }
 
+<<<<<<< HEAD
         private void conversãoDecimalToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ConvertToDecimal frm = new ConvertToDecimal
+=======
+        private void loopsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Loops frm = new Loops
+>>>>>>> master
             {
                 MdiParent = this,
                 Parent = pnlMain
             };
+<<<<<<< HEAD
             frm.StartPosition = FormStartPosition.CenterParent;
             frm.Show();
         }
+=======
+            frm.Show();
+        }
+
+        private void enumerableToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Enumerables frm = new Enumerables
+            {
+                MdiParent = this,
+                Parent = pnlMain
+            };
+            frm.Show();
+        }
+
+        private void visualToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frm = new Visual();
+            frm.Show();
+        }
+
+        private void resultsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+>>>>>>> master
     }
 }

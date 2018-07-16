@@ -55,10 +55,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConvertDate.cs">
+    <Compile Include="Performance\Enumerables.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConvertDate.Designer.cs">
+    <Compile Include="Performance\Enumerables.Designer.cs">
+      <DependentUpon>Enumerables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Performance\Loops.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Performance\Loops.Designer.cs">
+      <DependentUpon>Loops.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Results\ConvertDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Results\ConvertDate.Designer.cs">
       <DependentUpon>ConvertDate.cs</DependentUpon>
     </Compile>
     <Compile Include="ConvertToDecimal.cs">
@@ -76,7 +88,19 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ConvertDate.resx">
+    <Compile Include="Visual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visual.Designer.cs">
+      <DependentUpon>Visual.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Performance\Enumerables.resx">
+      <DependentUpon>Enumerables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Performance\Loops.resx">
+      <DependentUpon>Loops.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Results\ConvertDate.resx">
       <DependentUpon>ConvertDate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConvertToDecimal.resx">
@@ -94,6 +118,9 @@
     </Compile>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visual.resx">
+      <DependentUpon>Visual.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

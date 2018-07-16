@@ -33,6 +33,9 @@
             this.resultsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.convertDateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.performanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loopsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.enumerableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.visualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlMain = new System.Windows.Forms.Panel();
             this.conversãoDecimalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
@@ -44,7 +47,8 @@
             this.menuStrip.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.resultsToolStripMenuItem,
-            this.performanceToolStripMenuItem});
+            this.performanceToolStripMenuItem,
+            this.visualToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
@@ -60,6 +64,7 @@
             this.resultsToolStripMenuItem.Name = "resultsToolStripMenuItem";
             this.resultsToolStripMenuItem.Size = new System.Drawing.Size(86, 22);
             this.resultsToolStripMenuItem.Text = "Resultados";
+            this.resultsToolStripMenuItem.Click += new System.EventHandler(this.resultsToolStripMenuItem_Click);
             // 
             // convertDateToolStripMenuItem
             // 
@@ -70,9 +75,33 @@
             // 
             // performanceToolStripMenuItem
             // 
+            this.performanceToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.loopsToolStripMenuItem,
+            this.enumerableToolStripMenuItem});
             this.performanceToolStripMenuItem.Name = "performanceToolStripMenuItem";
             this.performanceToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
             this.performanceToolStripMenuItem.Text = "Performance";
+            // 
+            // loopsToolStripMenuItem
+            // 
+            this.loopsToolStripMenuItem.Name = "loopsToolStripMenuItem";
+            this.loopsToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.loopsToolStripMenuItem.Text = "Loops";
+            this.loopsToolStripMenuItem.Click += new System.EventHandler(this.loopsToolStripMenuItem_Click);
+            // 
+            // enumerableToolStripMenuItem
+            // 
+            this.enumerableToolStripMenuItem.Name = "enumerableToolStripMenuItem";
+            this.enumerableToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.enumerableToolStripMenuItem.Text = "Enumerable";
+            this.enumerableToolStripMenuItem.Click += new System.EventHandler(this.enumerableToolStripMenuItem_Click);
+            // 
+            // visualToolStripMenuItem
+            // 
+            this.visualToolStripMenuItem.Name = "visualToolStripMenuItem";
+            this.visualToolStripMenuItem.Size = new System.Drawing.Size(59, 22);
+            this.visualToolStripMenuItem.Text = "Visual";
+            this.visualToolStripMenuItem.Click += new System.EventHandler(this.visualToolStripMenuItem_Click);
             // 
             // pnlMain
             // 
@@ -124,6 +153,12 @@
         private System.Windows.Forms.ToolStripMenuItem convertDateToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem performanceToolStripMenuItem;
         private System.Windows.Forms.Panel pnlMain;
+<<<<<<< HEAD
         private System.Windows.Forms.ToolStripMenuItem conversãoDecimalToolStripMenuItem;
+=======
+        private System.Windows.Forms.ToolStripMenuItem loopsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem enumerableToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem visualToolStripMenuItem;
+>>>>>>> master
     }
 }

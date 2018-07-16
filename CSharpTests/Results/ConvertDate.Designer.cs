@@ -1,4 +1,4 @@
-﻿namespace CSharpTests
+﻿namespace CSharpTests.Results
 {
     partial class ConvertDate
     {

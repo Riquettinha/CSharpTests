@@ -7,5 +7,21 @@ C:\Users\isabella.riquetti\Documents\visual studio 2017\Projects\CSharpTests\CSh
 C:\Users\isabella.riquetti\Documents\visual studio 2017\Projects\CSharpTests\CSharpTests\obj\Debug\CSharpTests.csproj.GenerateResource.Cache
 C:\Users\isabella.riquetti\Documents\visual studio 2017\Projects\CSharpTests\CSharpTests\obj\Debug\CSharpTests.exe
 C:\Users\isabella.riquetti\Documents\visual studio 2017\Projects\CSharpTests\CSharpTests\obj\Debug\CSharpTests.pdb
+<<<<<<< HEAD
 C:\Users\isabella.riquetti\Documents\Visual Studio 2017\Projects\CSharpTests\CSharpTests\obj\Debug\CSharpTests.csproj.CoreCompileInputs.cache
 C:\Users\isabella.riquetti\Documents\Visual Studio 2017\Projects\CSharpTests\CSharpTests\obj\Debug\CSharpTests.ConvertToDecimal.resources
+=======
+C:\Users\isabella.riquetti\Documents\Projetos Pessoais\CSharpTests\CSharpTests\bin\Debug\CSharpTests.exe.config
+C:\Users\isabella.riquetti\Documents\Projetos Pessoais\CSharpTests\CSharpTests\bin\Debug\CSharpTests.exe
+C:\Users\isabella.riquetti\Documents\Projetos Pessoais\CSharpTests\CSharpTests\bin\Debug\CSharpTests.pdb
+C:\Users\isabella.riquetti\Documents\Projetos Pessoais\CSharpTests\CSharpTests\obj\Debug\CSharpTests.csprojResolveAssemblyReference.cache
+C:\Users\isabella.riquetti\Documents\Projetos Pessoais\CSharpTests\CSharpTests\obj\Debug\CSharpTests.Performance.Enumerables.resources
+C:\Users\isabella.riquetti\Documents\Projetos Pessoais\CSharpTests\CSharpTests\obj\Debug\CSharpTests.Performance.Loops.resources
+C:\Users\isabella.riquetti\Documents\Projetos Pessoais\CSharpTests\CSharpTests\obj\Debug\CSharpTests.Results.ConvertDate.resources
+C:\Users\isabella.riquetti\Documents\Projetos Pessoais\CSharpTests\CSharpTests\obj\Debug\CSharpTests.Properties.Resources.resources
+C:\Users\isabella.riquetti\Documents\Projetos Pessoais\CSharpTests\CSharpTests\obj\Debug\CSharpTests.Main.resources
+C:\Users\isabella.riquetti\Documents\Projetos Pessoais\CSharpTests\CSharpTests\obj\Debug\CSharpTests.csproj.GenerateResource.Cache
+C:\Users\isabella.riquetti\Documents\Projetos Pessoais\CSharpTests\CSharpTests\obj\Debug\CSharpTests.exe
+C:\Users\isabella.riquetti\Documents\Projetos Pessoais\CSharpTests\CSharpTests\obj\Debug\CSharpTests.pdb
+C:\Users\isabella.riquetti\Documents\Projetos Pessoais\CSharpTests\CSharpTests\obj\Debug\CSharpTests.Visual.resources
+>>>>>>> master
